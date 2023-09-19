@@ -49,6 +49,7 @@ namespace Sistema_PosizionamentoNumerico
             int[] targa = new int[7];
             long[] multilettere = new long[4];
             long[] multinumeri = new long[3];
+            long risultato = 0;
             Inserimento(targa);
             Console.WriteLine("Targa originale:");
             for (int i = 0; i < targa.Length; i++)
@@ -65,6 +66,10 @@ namespace Sistema_PosizionamentoNumerico
             for (int i = 0; i < multilettere.Length; i++)
             {
                 Console.Write(multilettere[i] + " ");
+            }
+            for (int i = 0; i < multilettere.Length; i++)
+            {
+                risultato += multilettere[i];
             }
             Console.WriteLine();
             Console.WriteLine("Risultato:");
