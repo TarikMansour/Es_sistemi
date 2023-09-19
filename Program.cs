@@ -66,6 +66,10 @@ namespace Sistema_PosizionamentoNumerico
             {
                 Console.Write(multilettere[i] + " ");
             }
+            Console.WriteLine();
+            Console.WriteLine("Risultato:");
+            Console.WriteLine(risultato);
+            Console.ReadLine();
             Console.ReadLine();
         }
     }
