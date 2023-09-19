@@ -70,7 +70,6 @@ namespace Sistema_PosizionamentoNumerico
             Console.WriteLine("Risultato:");
             Console.WriteLine(risultato);
             Console.ReadLine();
-            Console.ReadLine();
         }
     }
 }
