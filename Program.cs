@@ -38,6 +38,8 @@ namespace Sistema_PosizionamentoNumerico
                 int index = i;
                 targa[i] *= (int)Math.Pow(10, index); //funzione che moltiplica i numeri dentro l'array per 10 alla potenza del loro indice
                 //queste due metodi servono per copiare sia la parte numerica che letterale su due array di tipo long che hanno una capacita maggiore e anche per rendere piu facile i calcoli
+                //dall'array targa parto dall'indice 0, prendo 3 elementi (numeri) e gli sposto partendo dall'indice 0 a multinumeri
+                //dall'array targa parto dall'indice 3, prendo 4 elementi (lettere) e gli sposto partendo dall'indice 0 a multilettere
                 Array.Copy(targa, 0, multinumeri, 0, 3); 
                 Array.Copy(targa, 3, multilettere, 0, 4);
             }
