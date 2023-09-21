@@ -18,13 +18,18 @@ namespace Sistema_PosizionamentoNumerico
             }
             Console.WriteLine("Inserire le 4 lettere della targa nella stessa linea");
             string lettere = Console.ReadLine().ToUpper(); //inserimento delle lettere come un array di carattere (stringa)
-            for (int i = 0; i < lettere.Length; i++)
-            {
-                char lettera = lettere[i]; //lettere della stringa vengono salvate dentro un char 
-                int posizione = lettera - 'A' + 1; //calcolo della posizione della lettere sull'alfabeto sottraendo il valore ASCII di A dalla lettera inserita e + 1 per partire da 1 invece di 0
-                targa[i + 3] = posizione; //partendo dall'indice 3 riempio l'array con le lettere
+            //controllo: stringa deve essere avere 4 lettere in totale
+            if (lettere.Length < 4 || lettere.Length > 4){
+                Console.WriteLine("stringa invalida!");
             }
-
+            else{
+                for (int i = 0; i < lettere.Length; i++)
+                {
+                    char lettera = lettere[i]; //lettere della stringa vengono salvate dentro un char 
+                    int posizione = lettera - 'A' + 1; //calcolo della posizione della lettere sull'alfabeto sottraendo il valore ASCII di A dalla lettera inserita e + 1 per partire da 1 invece di 0
+                    targa[i + 3] = posizione; //partendo dall'indice 3 riempio l'array con le lettere
+                }
+            }
         }
         static void MoltiplicaECopia(int[] targa, long[] multinumeri, long[] multilettere) 
         {
